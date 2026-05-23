@@ -1,0 +1,13 @@
+{
+  "bucket_counts": {
+    "top_score": 20,
+    "top_votes": 20
+  },
+  "competition": "birdclef-2026",
+  "download_failure_count": 0,
+  "download_success_count": 38,
+  "fetched_at_utc": "2026-05-23T17:43:01.751197+00:00",
+  "rows_collected": 40,
+  "top_n_per_bucket": 20,
+  "unique_notebooks": 38
+}
