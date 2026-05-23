@@ -1,0 +1,21 @@
+author,bucket,bucket_rank,fetched_at_utc,last_run_time,ref,score,sort_by,title,votes
+Xie Xin,top_votes,1,2026-05-23T17:43:01.751197+00:00,2026-04-12 10:40:13.400000,dingjiarun/pantanal-distill-birdclef2026-onnx,,voteCount,pantanal-distill-birdclef2026-ONNX,728
+Yusuf Murtaza,top_votes,2,2026-05-23T17:43:01.751197+00:00,2026-04-19 05:03:43.107000,yusufmurtaza01/pantanal-distill-birdclef2026-improvement,,voteCount,pantanal-distill-birdclef2026-Improvement,411
+Imaad Mahmood,top_votes,3,2026-05-23T17:43:01.751197+00:00,2026-05-20 01:06:18.697000,imaadmahmood/birdclef-2026-perch-v2-protossm-0-925,,voteCount,BirdCLEF+ 2026 — Perch v2 + ProtoSSM · 0.925,373
+Maryna Borovska,top_votes,4,2026-05-23T17:43:01.751197+00:00,2026-04-29 14:44:40.597000,marynaborovska/birdclef-26-two-pass-ssm-advanced-pp,,voteCount,BirdCLEF+ 26 | Two-Pass SSM + Advanced PP,360
+zorojuro,top_votes,5,2026-05-23T17:43:01.751197+00:00,2026-05-01 20:05:35.007000,vyankteshdwivedi/birdclef-2026-onnx-perch-sequence-modeling,,voteCount,BirdCLEF 2026 — ONNX Perch + Sequence Modeling,354
+Amaranta,top_votes,6,2026-05-23T17:43:01.751197+00:00,2026-05-06 22:39:38.360000,ulyanovantonamaranta/birdclef-2026-gate-fake008-head0015,,voteCount,BirdCLEF+ 2026 Gate Fake008 Head0015,336
+g john rao,top_votes,7,2026-05-23T17:43:01.751197+00:00,2026-03-18 19:24:03.930000,jaejohn/perch-v2-starter-train-infer,,voteCount,perch_v2 starter: train + infer,292
+yash bhaskar,top_votes,8,2026-05-23T17:43:01.751197+00:00,2026-03-24 22:55:21.517000,yash9439/pantanal-distill-birdclef2026-improvement,,voteCount,pantanal-distill-birdclef2026-Improvement,269
+F.A.Nina,top_votes,9,2026-05-23T17:43:01.751197+00:00,2026-05-20 15:27:14.953000,nina2025/birdclef-2026-eos-6-bz,,voteCount,BirdCLEF+ 2026 | EoS.6 (bz),267
+yukiZ,top_votes,10,2026-05-23T17:43:01.751197+00:00,2026-04-06 10:01:53.963000,hideyukizushi/bird26-reproduce-perch-protossm-resssm-inf-train,,voteCount,Bird26|REPRODUCE|Perch+ProtoSSM+ResSSM|INF/TRAIN,257
+Patrick Kamongi,top_votes,11,2026-05-23T17:43:01.751197+00:00,2026-05-15 06:13:52.720000,kamongi/pantanal-distill-birdclef2026,,voteCount,pantanal-distill-birdclef2026,247
+Raunak Dey,top_votes,12,2026-05-23T17:43:01.751197+00:00,2026-05-08 10:09:57.687000,raunakdey07/birdclef-2026-multi-model-ensemble,,voteCount,BirdCLEF+ 2026 | Multi-Model Ensemble,245
+Tucker Arrants,top_votes,13,2026-05-23T17:43:01.751197+00:00,2026-04-28 17:18:25.777000,tuckerarrants/bc2026-distilled-sed,,voteCount,BC2026 Distilled-SED,226
+没落者,top_votes,14,2026-05-23T17:43:01.751197+00:00,2026-04-21 11:18:14.867000,needless090/birdclef-2026-iter-pseudo-perch-sed-lb-0-934-s,,voteCount,BirdCLEF+ 2026 Iter-Pseudo Perch+SED LB 0.934 s,222
+Konstantin Dmitriev,top_votes,15,2026-05-23T17:43:01.751197+00:00,2026-03-11 21:58:40.107000,kdmitrie/birdclef26-google-perch-starter,,voteCount,BirdCLEF26: Google Perch Starter,210
+cliff376,top_votes,16,2026-05-23T17:43:01.751197+00:00,2026-05-05 16:22:52.753000,cliff376/bc26-public-gate-combo-pc010-v2,,voteCount,BC26 Public Gate Combo PC010 V2,205
+F.A.Nina,top_votes,17,2026-05-23T17:43:01.751197+00:00,2026-05-17 01:08:38.970000,nina2025/birdclef-2026-eos-4,,voteCount,BirdCLEF+ 2026 | EoS.4,204
+Derek,top_votes,18,2026-05-23T17:43:01.751197+00:00,2026-05-17 12:00:15.713000,sunderekkiz/birdclef-2026-exp019-eos4-rank-power-06,,voteCount,birdclef 2026 exp019 eos4 rank power 06,199
+Antoine Masq,top_votes,19,2026-05-23T17:43:01.751197+00:00,2026-03-11 21:44:51.713000,antoinemasq/birdclef-2026-pytorch-baseline-inference,,voteCount,BirdCLEF 2026 - PyTorch Baseline [Inference],187
+Tawara,top_votes,20,2026-05-23T17:43:01.751197+00:00,2026-04-24 22:58:54.123000,ttahara/birdclef-2026-hgnetv2-b0-baseline-training,,voteCount,BirdCLEF+2026: HGNetV2-B0 Baseline [Training],185

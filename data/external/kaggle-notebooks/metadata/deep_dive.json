@@ -1,0 +1,137 @@
+{
+  "total_notebooks": 38,
+  "pattern_coverage": [
+    {
+      "pattern": "Calibration/scaling",
+      "count": 35,
+      "pct": 92.1
+    },
+    {
+      "pattern": "Perch family",
+      "count": 34,
+      "pct": 89.5
+    },
+    {
+      "pattern": "Ensembling/fusion",
+      "count": 34,
+      "pct": 89.5
+    },
+    {
+      "pattern": "SSM family",
+      "count": 32,
+      "pct": 84.2
+    },
+    {
+      "pattern": "Threshold tuning",
+      "count": 32,
+      "pct": 84.2
+    },
+    {
+      "pattern": "ONNX inference",
+      "count": 31,
+      "pct": 81.6
+    },
+    {
+      "pattern": "Test-time augmentation",
+      "count": 31,
+      "pct": 81.6
+    },
+    {
+      "pattern": "Two-pass pipeline",
+      "count": 26,
+      "pct": 68.4
+    },
+    {
+      "pattern": "TFLite inference",
+      "count": 11,
+      "pct": 28.9
+    },
+    {
+      "pattern": "Pseudo-labeling",
+      "count": 2,
+      "pct": 5.3
+    }
+  ],
+  "top_imports": [
+    {
+      "module": "numpy",
+      "count": 37
+    },
+    {
+      "module": "os",
+      "count": 37
+    },
+    {
+      "module": "pandas",
+      "count": 37
+    },
+    {
+      "module": "pathlib",
+      "count": 36
+    },
+    {
+      "module": "re",
+      "count": 35
+    },
+    {
+      "module": "sklearn",
+      "count": 35
+    },
+    {
+      "module": "soundfile",
+      "count": 35
+    },
+    {
+      "module": "torch",
+      "count": 35
+    },
+    {
+      "module": "tensorflow",
+      "count": 34
+    },
+    {
+      "module": "tqdm",
+      "count": 34
+    },
+    {
+      "module": "concurrent",
+      "count": 30
+    },
+    {
+      "module": "onnxruntime",
+      "count": 30
+    },
+    {
+      "module": "scipy",
+      "count": 29
+    },
+    {
+      "module": "time",
+      "count": 29
+    },
+    {
+      "module": "gc",
+      "count": 28
+    },
+    {
+      "module": "librosa",
+      "count": 28
+    },
+    {
+      "module": "subprocess",
+      "count": 28
+    },
+    {
+      "module": "warnings",
+      "count": 28
+    },
+    {
+      "module": "collections",
+      "count": 27
+    },
+    {
+      "module": "json",
+      "count": 27
+    }
+  ]
+}
