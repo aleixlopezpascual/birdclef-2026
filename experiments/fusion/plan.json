@@ -1,0 +1,49 @@
+{
+  "created_at_utc": "2026-05-23T18:06:39.462883+00:00",
+  "fusion_strategy": {
+    "strategy_name": "rank_power_weighted_fusion",
+    "enabled": true,
+    "streams": [
+      {
+        "stream_name": "perch_stream",
+        "weight": 0.5,
+        "rank_power": 1.0
+      },
+      {
+        "stream_name": "ssm_stream",
+        "weight": 0.3,
+        "rank_power": 1.1
+      },
+      {
+        "stream_name": "cnn_stream",
+        "weight": 0.2,
+        "rank_power": 1.0
+      }
+    ],
+    "normalization": "weights_sum_to_1",
+    "calibration": {
+      "method": "temperature_scaling",
+      "temperature": 1.0
+    }
+  },
+  "threshold_strategy": {
+    "strategy_name": "global_plus_per_class_override",
+    "enabled": true,
+    "global_threshold": 0.5,
+    "per_class_overrides_path": "experiments/configs/fusion/per_class_thresholds.csv",
+    "post_processing": {
+      "smoothing": true,
+      "suppression": true,
+      "safe_align_variant": "off"
+    }
+  },
+  "ablation_order": [
+    "raw_streams",
+    "weighted_fusion",
+    "rank_power_fusion",
+    "temperature_scaling",
+    "global_threshold",
+    "per_class_overrides",
+    "post_processing"
+  ]
+}

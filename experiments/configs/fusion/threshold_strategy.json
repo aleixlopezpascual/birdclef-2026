@@ -1,0 +1,11 @@
+{
+  "strategy_name": "global_plus_per_class_override",
+  "enabled": true,
+  "global_threshold": 0.5,
+  "per_class_overrides_path": "experiments/configs/fusion/per_class_thresholds.csv",
+  "post_processing": {
+    "smoothing": true,
+    "suppression": true,
+    "safe_align_variant": "off"
+  }
+}
