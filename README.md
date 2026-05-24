@@ -145,11 +145,37 @@ Output:
 - `experiments/kaggle_submission/raunak-v6-sweep-v1/<variant>/`
 - `experiments/kaggle_submission/raunak-v6-sweep-v1/variants_manifest.json`
 
+## Two-model blend packaging
+
+Build a competition notebook that blends the two current 0.949 models (Raunak V6 + Meenal V1):
+
+```bash
+uv run python scripts/create_two_model_blend_notebook.py
+```
+
 ## Current leaderboard status
 
 - Best submission so far: `kaggle-ported-raunak-v6-v1` with **0.949** public score.
+- Meenal hedge run (`kaggle-ported-meenal-improved-v1`) scored **0.949** (tie with champion).
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
-- Next hedge run is active: `aleixlopez/birdclef-2026-meenal-v1` (ported Meenal Improved).
+
+## What we have tried so far
+
+| Experiment | Notebook / ID | Result | Outcome |
+| --- | --- | --- | --- |
+| Constant baseline | `kaggle-constant-baseline-v1` | 0.500 | Floor sanity-check only |
+| Perch starter port | `kaggle-ported-perch-starter-v1` | 0.825 | Strong baseline jump |
+| Raunak V6 port | `kaggle-ported-raunak-v6-v1` | **0.949** | Current champion |
+| Raunak sweep calib-a | `kaggle-raunak-v6-sweep-calib-a` | 0.948 | Regressed vs champion |
+| Raunak sweep calib-b | `kaggle-raunak-v6-sweep-calib-b` | 0.948 | Regressed vs champion |
+| Raunak sweep calib-c | `kaggle-raunak-v6-sweep-calib-c` | 0.948 | Regressed vs champion |
+| Meenal Improved port | `kaggle-ported-meenal-improved-v1` | 0.949 | Ties champion (good hedge) |
+| Two-model blend (Raunak+Meenal) | `kaggle-two-model-blend-v1` | pending | v1 failed submission format; v2 pushed with template-alignment fix |
+
+### Current in-flight
+
+- `aleixlopez/birdclef-2026-two-model-blend-v1` is running (v2).
+- After completion, submit manually to competition to get public LB score.
 
 See detailed logs in:
 
