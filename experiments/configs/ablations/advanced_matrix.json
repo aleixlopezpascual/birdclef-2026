@@ -1,0 +1,30 @@
+{
+  "gate_criteria": {
+    "require_runtime_stable": true,
+    "require_cv_lb_alignment": true
+  },
+  "ablations": [
+    {
+      "name": "two_pass_inference",
+      "variants": [
+        "off",
+        "on"
+      ]
+    },
+    {
+      "name": "safe_align_heuristic",
+      "variants": [
+        "off",
+        "v1",
+        "v2"
+      ]
+    },
+    {
+      "name": "pseudo_labeling",
+      "variants": [
+        "off",
+        "high_confidence_only"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-05-23T18:04:22.706945+00:00",
+  "ref": "nina2025/birdclef-2026-eos-6-bz",
+  "title": "BirdCLEF+ 2026 | EoS.6 (bz)",
+  "author": "F.A.Nina",
+  "votes": "267",
+  "buckets": "top_score;top_votes",
+  "bucket_ranks": "top_score:1;top_votes:9",
+  "source_dir": "data/external/kaggle-notebooks/notebooks/nina2025_birdclef-2026-eos-6-bz",
+  "generated_dir": "experiments/baselines/nina2025_birdclef-2026-eos-6-bz",
+  "files": [
+    {
+      "name": "birdclef-2026-eos-6-bz.ipynb",
+      "size_bytes": 775551,
+      "sha256": "6750eee7b294ad3be21067291962cd6ec4faa56d93f351fb00985b4116aa5c48"
+    },
+    {
+      "name": "kernel-metadata.json",
+      "size_bytes": 1026,
+      "sha256": "2351e0ea29970e88b632b4b5c0ea666f8c1970f57d4fab0be97827ffca89cf37"
+    }
+  ]
+}

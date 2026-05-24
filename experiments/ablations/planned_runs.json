@@ -1,0 +1,103 @@
+{
+  "created_at_utc": "2026-05-23T18:11:19.419695+00:00",
+  "runs": [
+    {
+      "experiment_id": "runtime-mock-v1__two_pass_inference__off",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "976863898e16",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__two_pass_inference__off",
+      "status": "planned",
+      "ablation": "two_pass_inference",
+      "variant": "off",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__two_pass_inference__on",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "7fc5914345d7",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__two_pass_inference__on",
+      "status": "planned",
+      "ablation": "two_pass_inference",
+      "variant": "on",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__safe_align_heuristic__off",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "f50d4665033e",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__safe_align_heuristic__off",
+      "status": "planned",
+      "ablation": "safe_align_heuristic",
+      "variant": "off",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__safe_align_heuristic__v1",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "6082c82f2274",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__safe_align_heuristic__v1",
+      "status": "planned",
+      "ablation": "safe_align_heuristic",
+      "variant": "v1",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__safe_align_heuristic__v2",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "69876b5c1405",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__safe_align_heuristic__v2",
+      "status": "planned",
+      "ablation": "safe_align_heuristic",
+      "variant": "v2",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__pseudo_labeling__off",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "99c15c2b3a5a",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__pseudo_labeling__off",
+      "status": "planned",
+      "ablation": "pseudo_labeling",
+      "variant": "off",
+      "base_experiment_id": "runtime-mock-v1"
+    },
+    {
+      "experiment_id": "runtime-mock-v1__pseudo_labeling__high_confidence_only",
+      "timestamp_utc": "2026-05-23T18:11:19.419695+00:00",
+      "config_hash": "568b8133da3d",
+      "seed": "2026",
+      "fold_scheme": "grouped-5fold",
+      "train_data_version": "unknown",
+      "inference_backend": "onnx",
+      "artifacts_path": "experiments/ablations/runtime-mock-v1__pseudo_labeling__high_confidence_only",
+      "status": "planned",
+      "ablation": "pseudo_labeling",
+      "variant": "high_confidence_only",
+      "base_experiment_id": "runtime-mock-v1"
+    }
+  ]
+}

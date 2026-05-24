@@ -1,0 +1,17 @@
+experiment_id,timestamp_utc,config_hash,seed,fold_scheme,train_data_version,inference_backend,artifacts_path,status
+runtime-mock-v1,2026-05-23T18:11:19.377054+00:00,mockruntime001,2026,grouped-5fold,unknown,onnx,experiments/runtime/runtime-mock-v1,runtime_hardened
+runtime-mock-v1__two_pass_inference__off,2026-05-23T18:11:19.419695+00:00,976863898e16,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__two_pass_inference__off,planned
+runtime-mock-v1__two_pass_inference__on,2026-05-23T18:11:19.419695+00:00,7fc5914345d7,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__two_pass_inference__on,planned
+runtime-mock-v1__safe_align_heuristic__off,2026-05-23T18:11:19.419695+00:00,f50d4665033e,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__safe_align_heuristic__off,planned
+runtime-mock-v1__safe_align_heuristic__v1,2026-05-23T18:11:19.419695+00:00,6082c82f2274,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__safe_align_heuristic__v1,planned
+runtime-mock-v1__safe_align_heuristic__v2,2026-05-23T18:11:19.419695+00:00,69876b5c1405,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__safe_align_heuristic__v2,planned
+runtime-mock-v1__pseudo_labeling__off,2026-05-23T18:11:19.419695+00:00,99c15c2b3a5a,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__pseudo_labeling__off,planned
+runtime-mock-v1__pseudo_labeling__high_confidence_only,2026-05-23T18:11:19.419695+00:00,568b8133da3d,2026,grouped-5fold,unknown,onnx,experiments/ablations/runtime-mock-v1__pseudo_labeling__high_confidence_only,planned
+constant-baseline-v1,2026-05-23T18:20:00.522383+00:00,constbasev1,2026,grouped-5fold,unknown,cpu,experiments/runtime/constant-baseline-v1,runtime_hardened
+kaggle-constant-baseline-v1,2026-05-23T18:24:57.584373+00:00,kagglekernelv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/constant-baseline-v1,complete_scored
+kaggle-ported-perch-starter-v1,2026-05-23T18:52:24.523184+00:00,portedperchv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/ported-perch-starter-v1,complete_scored
+kaggle-ported-raunak-v6-v1,2026-05-23T21:13:12.099342+00:00,portedraunakv6v1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/ported-raunak-v6-v1,complete_scored
+kaggle-raunak-v6-sweep-calib-a,2026-05-24T01:27:00+00:00,raunakv6sweep_caliba,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-a,complete_scored
+kaggle-raunak-v6-sweep-calib-b,2026-05-24T01:27:00+00:00,raunakv6sweep_calibb,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-b,complete_scored
+kaggle-raunak-v6-sweep-calib-c,2026-05-24T01:27:00+00:00,raunakv6sweep_calibc,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-c,complete_scored
+kaggle-ported-meenal-improved-v1,2026-05-24T15:28:30+00:00,portedmeenalimprovedv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/ported-meenal-improved-v1,running

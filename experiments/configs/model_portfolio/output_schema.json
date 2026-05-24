@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "required_columns": {
+    "leading": [
+      "row_id"
+    ],
+    "class_probabilities": "all competition classes from taxonomy.csv in submission order"
+  },
+  "constraints": {
+    "window_seconds": 5,
+    "probability_range": [
+      0.0,
+      1.0
+    ]
+  }
+}

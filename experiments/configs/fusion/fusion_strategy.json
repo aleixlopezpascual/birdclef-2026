@@ -1,0 +1,26 @@
+{
+  "strategy_name": "rank_power_weighted_fusion",
+  "enabled": true,
+  "streams": [
+    {
+      "stream_name": "perch_stream",
+      "weight": 0.5,
+      "rank_power": 1.0
+    },
+    {
+      "stream_name": "ssm_stream",
+      "weight": 0.3,
+      "rank_power": 1.1
+    },
+    {
+      "stream_name": "cnn_stream",
+      "weight": 0.2,
+      "rank_power": 1.0
+    }
+  ],
+  "normalization": "weights_sum_to_1",
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 1.0
+  }
+}
