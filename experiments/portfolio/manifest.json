@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-05-23T18:05:42.201928+00:00",
+  "config_dir": "experiments/configs/model_portfolio",
+  "stream_count": 3,
+  "enabled_stream_count": 3,
+  "streams": [
+    {
+      "stream_name": "cnn_stream",
+      "family": "cnn",
+      "enabled": true,
+      "config_path": "experiments/configs/model_portfolio/cnn_stream.json",
+      "output_schema_ref": "experiments/configs/model_portfolio/output_schema.json"
+    },
+    {
+      "stream_name": "perch_stream",
+      "family": "perch",
+      "enabled": true,
+      "config_path": "experiments/configs/model_portfolio/perch_stream.json",
+      "output_schema_ref": "experiments/configs/model_portfolio/output_schema.json"
+    },
+    {
+      "stream_name": "ssm_stream",
+      "family": "ssm",
+      "enabled": true,
+      "config_path": "experiments/configs/model_portfolio/ssm_stream.json",
+      "output_schema_ref": "experiments/configs/model_portfolio/output_schema.json"
+    }
+  ]
+}

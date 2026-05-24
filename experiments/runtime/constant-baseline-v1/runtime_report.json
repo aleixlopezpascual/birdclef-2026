@@ -1,0 +1,36 @@
+{
+  "experiment_id": "constant-baseline-v1",
+  "created_at_utc": "2026-05-23T18:20:00.522077+00:00",
+  "submission_path": "experiments/runtime/constant-baseline/submission.csv",
+  "inference_cmd": "uv run python scripts/generate_constant_baseline_submission.py --sample-submission data/competition/raw/sample_submission.csv --output experiments/runtime/constant-baseline/submission.csv --prob 0.02",
+  "repeat": 2,
+  "deterministic": true,
+  "checksums": [
+    "059b942b877e7a8bd3a0b042e716a56396523e94105847df903c4203de392f3d",
+    "059b942b877e7a8bd3a0b042e716a56396523e94105847df903c4203de392f3d"
+  ],
+  "runtime_seconds_max": 0.048844,
+  "max_rss_kb_delta_max": 28999680.0,
+  "validation": {
+    "rows": 3,
+    "class_columns": 234
+  },
+  "runs": [
+    {
+      "start_utc": "2026-05-23T18:20:00.425323+00:00",
+      "end_utc": "2026-05-23T18:20:00.474167+00:00",
+      "duration_seconds": 0.048844,
+      "max_rss_kb_delta": 28999680,
+      "stdout": "Wrote baseline submission: experiments/runtime/constant-baseline/submission.csv\n",
+      "stderr": ""
+    },
+    {
+      "start_utc": "2026-05-23T18:20:00.475175+00:00",
+      "end_utc": "2026-05-23T18:20:00.521691+00:00",
+      "duration_seconds": 0.046516,
+      "max_rss_kb_delta": 16384,
+      "stdout": "Wrote baseline submission: experiments/runtime/constant-baseline/submission.csv\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "calib-a",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-calib-a",
+    "path": "experiments/kaggle_submission/raunak-v6-sweep-v1/calib-a",
+    "texture_temp": 0.9,
+    "aves_temp": 1.05,
+    "file_scale_power": 0.4,
+    "rank_power": 0.45,
+    "smooth_alpha": 0.18,
+    "proto_weight": 0.6,
+    "sed_weight": 0.4
+  },
+  {
+    "variant": "calib-b",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-calib-b",
+    "path": "experiments/kaggle_submission/raunak-v6-sweep-v1/calib-b",
+    "texture_temp": 1.0,
+    "aves_temp": 1.15,
+    "file_scale_power": 0.35,
+    "rank_power": 0.35,
+    "smooth_alpha": 0.24,
+    "proto_weight": 0.62,
+    "sed_weight": 0.38
+  },
+  {
+    "variant": "calib-c",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-calib-c",
+    "path": "experiments/kaggle_submission/raunak-v6-sweep-v1/calib-c",
+    "texture_temp": 0.95,
+    "aves_temp": 1.1,
+    "file_scale_power": 0.5,
+    "rank_power": 0.5,
+    "smooth_alpha": 0.2,
+    "proto_weight": 0.58,
+    "sed_weight": 0.42
+  }
+]

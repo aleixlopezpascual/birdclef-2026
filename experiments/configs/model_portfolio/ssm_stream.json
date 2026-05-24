@@ -1,0 +1,21 @@
+{
+  "stream_name": "ssm_stream",
+  "family": "ssm",
+  "enabled": true,
+  "seed": 2026,
+  "input": {
+    "sample_rate_hz": 32000,
+    "window_seconds": 5
+  },
+  "training": {
+    "folds": 5,
+    "batch_size": 24
+  },
+  "inference": {
+    "backend_priority": [
+      "onnx",
+      "torch"
+    ]
+  },
+  "output_schema_ref": "experiments/configs/model_portfolio/output_schema.json"
+}

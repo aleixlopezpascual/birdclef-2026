@@ -1,0 +1,13 @@
+{
+  "id": "aleixlopez/birdclef-2026-constant-baseline-v1",
+  "title": "BirdCLEF 2026 Constant Baseline V1",
+  "code_file": "constant_baseline_v1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "birdclef-2026"
+  ]
+}
