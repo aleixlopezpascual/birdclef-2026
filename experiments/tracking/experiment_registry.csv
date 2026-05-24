@@ -14,4 +14,5 @@ kaggle-ported-raunak-v6-v1,2026-05-23T21:13:12.099342+00:00,portedraunakv6v1,202
 kaggle-raunak-v6-sweep-calib-a,2026-05-24T01:27:00+00:00,raunakv6sweep_caliba,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-a,complete_scored
 kaggle-raunak-v6-sweep-calib-b,2026-05-24T01:27:00+00:00,raunakv6sweep_calibb,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-b,complete_scored
 kaggle-raunak-v6-sweep-calib-c,2026-05-24T01:27:00+00:00,raunakv6sweep_calibc,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/raunak-v6-sweep-v1/calib-c,complete_scored
-kaggle-ported-meenal-improved-v1,2026-05-24T15:28:30+00:00,portedmeenalimprovedv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/ported-meenal-improved-v1,running
+kaggle-ported-meenal-improved-v1,2026-05-24T15:28:30+00:00,portedmeenalimprovedv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/ported-meenal-improved-v1,complete_scored
+kaggle-two-model-blend-v1,2026-05-24T17:47:30+00:00,twomodelblendv1,2026,kaggle-hidden-test,competition-v1,kaggle-notebook-cpu,experiments/kaggle_submission/two-model-blend-v1,running
