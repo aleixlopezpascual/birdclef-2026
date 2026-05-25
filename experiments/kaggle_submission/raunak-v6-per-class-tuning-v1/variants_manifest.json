@@ -1,0 +1,23 @@
+[
+  {
+    "variant": "conservative",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-per-class-conservative",
+    "path": "experiments/kaggle_submission/raunak-v6-per-class-tuning-v1/conservative",
+    "config_variant": "conservative",
+    "title": "Per-Class Conservative"
+  },
+  {
+    "variant": "balanced",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-per-class-balanced",
+    "path": "experiments/kaggle_submission/raunak-v6-per-class-tuning-v1/balanced",
+    "config_variant": "balanced",
+    "title": "Per-Class Balanced"
+  },
+  {
+    "variant": "aggressive",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-per-class-aggressive",
+    "path": "experiments/kaggle_submission/raunak-v6-per-class-tuning-v1/aggressive",
+    "config_variant": "aggressive",
+    "title": "Per-Class Aggressive"
+  }
+]
