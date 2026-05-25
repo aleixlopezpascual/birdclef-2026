@@ -153,11 +153,74 @@ Build a competition notebook that blends the two current 0.949 models (Raunak V6
 uv run python scripts/create_two_model_blend_notebook.py
 ```
 
+> [!WARNING]
+> **Do not submit cached-output CSV blends as competition entries.**
+> For BirdCLEF code-competition scoring, blending must happen inside the same scoring run that generates
+> predictions for the current hidden test set. Reusing `submission*.csv` artifacts from other kernels can produce
+> scoring errors or invalid leaderboard behavior, even when file schema looks correct.
+
+## Three-stream blend packaging
+
+Build a competition notebook that rank-blends three existing streams
+(Raunak V6 + Meenal V1 + EoS6) with conservative weights:
+
+```bash
+uv run python scripts/create_three_stream_blend_notebook.py
+```
+
+## Class-group threshold sweep
+
+Generate per-class threshold sweep variants for three groups
+(`soundscape_only`, `few_shot`, `standard`) using taxonomy order:
+
+```bash
+uv run python scripts/create_class_group_threshold_sweep.py
+```
+
+Outputs:
+
+- `experiments/configs/fusion/sweeps/class-group-v1/<variant>/per_class_thresholds.csv`
+- `experiments/configs/fusion/sweeps/class-group-v1/<variant>/threshold_strategy.json`
+- `experiments/configs/fusion/sweeps/class-group-v1/variants_manifest.json`
+
+## Three-stream + soundscape-only boost packaging
+
+Build a three-stream blend variant that applies a conservative multiplicative
+boost on the 28 soundscape-only classes before writing `submission.csv`:
+
+```bash
+uv run python scripts/create_three_stream_soundscape_boost_notebook.py
+```
+
+## Three-stream + non-bird specialization packaging
+
+Build a three-stream blend variant that applies class-specific boost factors
+for non-bird classes (Amphibia/Insecta/Mammalia/Reptilia):
+
+```bash
+uv run python scripts/create_three_stream_non_bird_specialized_notebook.py
+```
+
+## Parallel three-stream sweep packaging
+
+Create a parallel-ready family of three-stream blend notebooks (baseline, boosts,
+and combo variants) for rapid back-to-back Kaggle submissions:
+
+```bash
+uv run python scripts/create_three_stream_parallel_sweep_notebooks.py
+```
+
+Outputs:
+
+- `experiments/kaggle_submission/three-stream-parallel-sweep-v1/<variant>/`
+- `experiments/kaggle_submission/three-stream-parallel-sweep-v1/variants_manifest.json`
+
 ## Current leaderboard status
 
 - Best submission so far: `kaggle-ported-raunak-v6-v1` with **0.949** public score.
 - Meenal hedge run (`kaggle-ported-meenal-improved-v1`) scored **0.949** (tie with champion).
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
+- Two-model blend v2 scored **0.500** (blend bug due row alignment mismatch; fail-fast fix now applied).
 
 ## What we have tried so far
 
@@ -170,12 +233,24 @@ uv run python scripts/create_two_model_blend_notebook.py
 | Raunak sweep calib-b | `kaggle-raunak-v6-sweep-calib-b` | 0.948 | Regressed vs champion |
 | Raunak sweep calib-c | `kaggle-raunak-v6-sweep-calib-c` | 0.948 | Regressed vs champion |
 | Meenal Improved port | `kaggle-ported-meenal-improved-v1` | 0.949 | Ties champion (good hedge) |
-| Two-model blend (Raunak+Meenal) | `kaggle-two-model-blend-v1` | pending | v1 failed submission format; v2 pushed with template-alignment fix |
+| Two-model blend (Raunak+Meenal) | `kaggle-two-model-blend-v1` | 0.500 | v2 failed due row alignment mismatch; generator patched to fail-fast (no silent 0.5 fill) |
+| Two-model blend rerun | `kaggle-two-model-blend-v3` | failed | fail-fast detected 3 missing `row_id` in Meenal source |
+| Two-model blend rerun | `kaggle-two-model-blend-v4` | failed | fallback still produced NaNs in blend output check |
+| Two-model blend rerun | `kaggle-two-model-blend-v5` | failed | still collapsed; source template issue persisted |
+| Two-model blend rerun | `kaggle-two-model-blend-v6` | failed | switched template source; still not robust enough |
+| Two-model blend rerun | `kaggle-two-model-blend-v7` | scoring_error | cached-source blending still invalid for hidden scoring; path now hardened to fail-fast |
+| Two-model blend rerun | `kaggle-two-model-blend-v8` | failed (expected) | hard fail-fast guard blocked unsafe small-template run |
 
 ### Current in-flight
 
-- `aleixlopez/birdclef-2026-two-model-blend-v1` is running (v2).
-- After completion, submit manually to competition to get public LB score.
+- `aleixlopez/birdclef-2026-two-model-blend-v1` is now in **fail-fast safety mode** (no further submissions from this cached-source blend path).
+- Three new packaged candidates are ready to push/submit:
+  - `aleixlopez/birdclef-2026-three-stream-blend-v1`
+  - `aleixlopez/birdclef-2026-three-stream-soundscape-boost-v1`
+  - `aleixlopez/birdclef-2026-three-stream-non-bird-specialized-v1`
+- Parallel sweep family is also packaged (`three-stream-parallel-sweep-v1`) with 5 variants:
+  - baseline, soundscape-boost, non-bird-specialized, combo-boost, eos-heavy-combo
+- After completion/push, submit manually to competition to get public LB score.
 
 See detailed logs in:
 
