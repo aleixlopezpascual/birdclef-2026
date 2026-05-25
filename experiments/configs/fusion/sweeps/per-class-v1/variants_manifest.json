@@ -1,0 +1,62 @@
+[
+  {
+    "variant_slug": "conservative",
+    "variant_name": "Conservative (prioritize precision)",
+    "path": "experiments/configs/fusion/sweeps/per-class-v1/conservative",
+    "thresholds": {
+      "standard": 0.5,
+      "bird": 0.5,
+      "few_shot": 0.45,
+      "soundscape_only": 0.35,
+      "non_bird": 0.55
+    },
+    "group_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "bird": 161,
+      "non_bird": 20,
+      "standard": 0
+    },
+    "total_classes": 234
+  },
+  {
+    "variant_slug": "balanced",
+    "variant_name": "Balanced (precision-recall balance)",
+    "path": "experiments/configs/fusion/sweeps/per-class-v1/balanced",
+    "thresholds": {
+      "standard": 0.49,
+      "bird": 0.48,
+      "few_shot": 0.4,
+      "soundscape_only": 0.28,
+      "non_bird": 0.52
+    },
+    "group_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "bird": 161,
+      "non_bird": 20,
+      "standard": 0
+    },
+    "total_classes": 234
+  },
+  {
+    "variant_slug": "aggressive",
+    "variant_name": "Aggressive (prioritize recall)",
+    "path": "experiments/configs/fusion/sweeps/per-class-v1/aggressive",
+    "thresholds": {
+      "standard": 0.48,
+      "bird": 0.46,
+      "few_shot": 0.35,
+      "soundscape_only": 0.24,
+      "non_bird": 0.5
+    },
+    "group_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "bird": 161,
+      "non_bird": 20,
+      "standard": 0
+    },
+    "total_classes": 234
+  }
+]

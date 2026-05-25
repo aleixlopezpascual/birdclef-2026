@@ -222,6 +222,27 @@ Outputs:
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
 - Two-model blend v2 scored **0.500** (blend bug due row alignment mismatch; fail-fast fix now applied).
 
+### In preparation (Raunak V6 domain tuning)
+
+New domain-specific improvement variants ready for Kaggle submission:
+
+**Wave 1: Per-Class Threshold Tuning (3 variants)**
+- Conservative, Balanced, Aggressive per-class thresholds
+- Targets bird/non-bird/soundscape-only species separately
+- Path: `experiments/kaggle_submission/raunak-v6-per-class-tuning-v1/`
+
+**Wave 2: Non-Bird Specialist (1 variant)**
+- Separate temperature scaling for non-bird taxa (frogs, insects)
+- Path: `experiments/kaggle_submission/raunak-v6-non-bird-specialist-v1/`
+
+**Wave 3: Soundscape-Only Boost (1 variant)**
+- Direct 1.08× multiplier for 28 soundscape-only species
+- Path: `experiments/kaggle_submission/raunak-v6-soundscape-boost-v2/`
+
+**Documentation:**
+- Implementation details: [`IMPLEMENTATION_SUMMARY.md`](IMPLEMENTATION_SUMMARY.md)
+- Submission workflow: [`SUBMISSION_GUIDE.md`](SUBMISSION_GUIDE.md)
+
 ## What we have tried so far
 
 | Experiment | Notebook / ID | Result | Outcome |
