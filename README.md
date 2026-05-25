@@ -222,26 +222,22 @@ Outputs:
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
 - Two-model blend v2 scored **0.500** (blend bug due row alignment mismatch; fail-fast fix now applied).
 
-### In preparation (Raunak V6 domain tuning)
+### ⚠️ Research findings (deep dive complete — 2026-05-26)
 
-New domain-specific improvement variants ready for Kaggle submission:
+**Key discovery:** Raunak V6 already includes ALL major techniques found in top public notebooks:
+- TTA (5 circular shifts), ResidualSSM 2nd pass, site/hour priors, MLP probes, Gates 1-5 (fake/temporal/SED/sonotype/rare-class)
 
-**Wave 1: Per-Class Threshold Tuning (3 variants)**
-- Conservative, Balanced, Aggressive per-class thresholds
-- Targets bird/non-bird/soundscape-only species separately
-- Path: `experiments/kaggle_submission/raunak-v6-per-class-tuning-v1/`
+**5 domain-tuning notebooks generated earlier are BUGGY — do not submit:**
+- `raunak-v6-per-class-{conservative,balanced,aggressive}`, `non-bird-specialist`, `soundscape-boost-v2`
+- Bug: all use binary thresholding `(score > threshold).astype(int)` which **destroys ROC-AUC** (rank-based metric)
+- Marked `DO_NOT_SUBMIT` in `leaderboard_tracking.csv`
 
-**Wave 2: Non-Bird Specialist (1 variant)**
-- Separate temperature scaling for non-bird taxa (frogs, insects)
-- Path: `experiments/kaggle_submission/raunak-v6-non-bird-specialist-v1/`
+**Gap to top LB (~0.963) is mainly from multi-model ensemble diversity**, not missing techniques.
 
-**Wave 3: Soundscape-Only Boost (1 variant)**
-- Direct 1.08× multiplier for 28 soundscape-only species
-- Path: `experiments/kaggle_submission/raunak-v6-soundscape-boost-v2/`
-
-**Documentation:**
-- Implementation details: [`IMPLEMENTATION_SUMMARY.md`](IMPLEMENTATION_SUMMARY.md)
-- Submission workflow: [`SUBMISSION_GUIDE.md`](SUBMISSION_GUIDE.md)
+**Recommended next path:**
+1. Fix two-model blend using pre-computed Kaggle dataset CSVs (Nina's approach)
+2. Sweep gate parameters (fake blend 0.06–0.10, temporal radius 2–4)
+3. Research report: `session-state/files/research/do-a-research-about-the-discussions-topi.md`
 
 ## What we have tried so far
 
