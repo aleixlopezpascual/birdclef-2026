@@ -1,0 +1,18 @@
+{
+  "id": "aleixlopez/birdclef-2026-three-stream-blend-v1",
+  "title": "BirdCLEF 2026 Three Stream Blend V1",
+  "code_file": "three_stream_blend_v1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "birdclef-2026"
+  ],
+  "kernel_sources": [
+    "aleixlopez/birdclef-2026-ported-raunak-v6-v1",
+    "aleixlopez/birdclef-2026-meenal-v1",
+    "aleixlopez/birdclef-2026-ported-eos6-v1"
+  ]
+}

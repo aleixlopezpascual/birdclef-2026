@@ -1,0 +1,62 @@
+[
+  {
+    "variant": "baseline",
+    "kaggle_id": "aleixlopez/birdclef-2026-three-stream-parallel-baseline-v1",
+    "path": "experiments/kaggle_submission/three-stream-parallel-sweep-v1/baseline",
+    "weights": {
+      "raunak": 0.4,
+      "meenal": 0.4,
+      "eos6": 0.2
+    },
+    "soundscape_boost": 1.0,
+    "use_non_bird_factors": false
+  },
+  {
+    "variant": "soundscape-boost",
+    "kaggle_id": "aleixlopez/birdclef-2026-three-stream-parallel-soundscape-boost-v1",
+    "path": "experiments/kaggle_submission/three-stream-parallel-sweep-v1/soundscape-boost",
+    "weights": {
+      "raunak": 0.4,
+      "meenal": 0.4,
+      "eos6": 0.2
+    },
+    "soundscape_boost": 1.08,
+    "use_non_bird_factors": false
+  },
+  {
+    "variant": "non-bird-specialized",
+    "kaggle_id": "aleixlopez/birdclef-2026-three-stream-parallel-non-bird-specialized-v1",
+    "path": "experiments/kaggle_submission/three-stream-parallel-sweep-v1/non-bird-specialized",
+    "weights": {
+      "raunak": 0.4,
+      "meenal": 0.4,
+      "eos6": 0.2
+    },
+    "soundscape_boost": 1.0,
+    "use_non_bird_factors": true
+  },
+  {
+    "variant": "combo-boost",
+    "kaggle_id": "aleixlopez/birdclef-2026-three-stream-parallel-combo-boost-v1",
+    "path": "experiments/kaggle_submission/three-stream-parallel-sweep-v1/combo-boost",
+    "weights": {
+      "raunak": 0.4,
+      "meenal": 0.4,
+      "eos6": 0.2
+    },
+    "soundscape_boost": 1.08,
+    "use_non_bird_factors": true
+  },
+  {
+    "variant": "eos-heavy-combo",
+    "kaggle_id": "aleixlopez/birdclef-2026-three-stream-parallel-eos-heavy-combo-v1",
+    "path": "experiments/kaggle_submission/three-stream-parallel-sweep-v1/eos-heavy-combo",
+    "weights": {
+      "raunak": 0.35,
+      "meenal": 0.35,
+      "eos6": 0.3
+    },
+    "soundscape_boost": 1.08,
+    "use_non_bird_factors": true
+  }
+]
