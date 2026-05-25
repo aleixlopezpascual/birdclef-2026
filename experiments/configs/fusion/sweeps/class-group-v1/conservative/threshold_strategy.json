@@ -1,0 +1,11 @@
+{
+  "strategy_name": "class_group_conservative",
+  "enabled": true,
+  "global_threshold": 0.52,
+  "per_class_overrides_path": "experiments/configs/fusion/sweeps/class-group-v1/conservative/per_class_thresholds.csv",
+  "post_processing": {
+    "smoothing": true,
+    "suppression": true,
+    "safe_align_variant": "off"
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "variant": "balanced",
+    "path": "experiments/configs/fusion/sweeps/class-group-v1/balanced",
+    "global_threshold": 0.5,
+    "thresholds": {
+      "standard": 0.5,
+      "few_shot": 0.4,
+      "soundscape_only": 0.35
+    },
+    "class_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "standard": 181
+    }
+  },
+  {
+    "variant": "recall-heavy",
+    "path": "experiments/configs/fusion/sweeps/class-group-v1/recall-heavy",
+    "global_threshold": 0.48,
+    "thresholds": {
+      "standard": 0.48,
+      "few_shot": 0.34,
+      "soundscape_only": 0.3
+    },
+    "class_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "standard": 181
+    }
+  },
+  {
+    "variant": "conservative",
+    "path": "experiments/configs/fusion/sweeps/class-group-v1/conservative",
+    "global_threshold": 0.52,
+    "thresholds": {
+      "standard": 0.52,
+      "few_shot": 0.45,
+      "soundscape_only": 0.4
+    },
+    "class_counts": {
+      "soundscape_only": 28,
+      "few_shot": 25,
+      "standard": 181
+    }
+  }
+]
