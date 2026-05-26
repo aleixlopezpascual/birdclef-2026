@@ -1,0 +1,29 @@
+{
+  "id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r3",
+  "title": "BirdCLEF 2026 Raunak V6 Gate FB100-R3",
+  "code_file": "raunak_v6_gate_fb100_r3.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "birdclef-2026"
+  ],
+  "dataset_sources": [
+    "tuckerarrants/bc2026-distilled-sed-public",
+    "tuckerarrants/birdclef-2026-waveform-cache",
+    "jaejohn/perch-meta",
+    "tuckerarrants/perch-v2-no-dft-onnx",
+    "rishikeshjani/perch-onnx-for-birdclef-2026",
+    "hideyukizushi/sgkfk-202604041716"
+  ],
+  "kernel_sources": [
+    "ashok205/tf-wheels",
+    "hideyukizushi/bird26-reprod-perch-proto-residualssm-train-s7177"
+  ],
+  "model_sources": [
+    "google/bird-vocalization-classifier/TensorFlow2/perch_v2_cpu/1"
+  ]
+}

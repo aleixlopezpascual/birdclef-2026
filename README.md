@@ -219,8 +219,29 @@ Outputs:
 
 - Best submission so far: `kaggle-ported-raunak-v6-v1` with **0.949** public score.
 - Meenal hedge run (`kaggle-ported-meenal-improved-v1`) scored **0.949** (tie with champion).
+- New self-contained blends both completed and scored **0.949** (tie, no gain):
+  - `kaggle-blend-m7-m3-v1` (M7 0.965 + M3 0.035)
+  - `kaggle-blend-m7-m4-v1` (M7 0.70 + M4 0.30)
+- Gate-parameter sweep (3 submissions) also showed no uplift: **0.949, 0.948, 0.948**.
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
 - Two-model blend v2 scored **0.500** (blend bug due row alignment mismatch; fail-fast fix now applied).
+
+### ⚠️ Research findings (deep dive complete — 2026-05-26)
+
+**Key discovery:** Raunak V6 already includes ALL major techniques found in top public notebooks:
+- TTA (5 circular shifts), ResidualSSM 2nd pass, site/hour priors, MLP probes, Gates 1-5 (fake/temporal/SED/sonotype/rare-class)
+
+**5 domain-tuning notebooks generated earlier are BUGGY — do not submit:**
+- `raunak-v6-per-class-{conservative,balanced,aggressive}`, `non-bird-specialist`, `soundscape-boost-v2`
+- Bug: all use binary thresholding `(score > threshold).astype(int)` which **destroys ROC-AUC** (rank-based metric)
+- Marked `DO_NOT_SUBMIT` in `leaderboard_tracking.csv`
+
+**Gap to top LB (~0.963) is mainly from multi-model ensemble diversity**, not missing techniques.
+
+**Recommended next path:**
+1. Fix two-model blend using pre-computed Kaggle dataset CSVs (Nina's approach)
+2. Sweep gate parameters (fake blend 0.06–0.10, temporal radius 2–4)
+3. Research report: `session-state/files/research/do-a-research-about-the-discussions-topi.md`
 
 ## What we have tried so far
 
@@ -240,11 +261,18 @@ Outputs:
 | Two-model blend rerun | `kaggle-two-model-blend-v6` | failed | switched template source; still not robust enough |
 | Two-model blend rerun | `kaggle-two-model-blend-v7` | scoring_error | cached-source blending still invalid for hidden scoring; path now hardened to fail-fast |
 | Two-model blend rerun | `kaggle-two-model-blend-v8` | failed (expected) | hard fail-fast guard blocked unsafe small-template run |
+| Self-contained blend (M7+M3) | `kaggle-blend-m7-m3-v1` | 0.949 | Stable run, ties champion (no uplift) |
+| Self-contained blend (M7+M4) | `kaggle-blend-m7-m4-v1` | 0.949 | Stable run, ties champion (no uplift) |
+| Gate sweep (FB060-R2 / FB080-R4 / FB100-R3) | `kaggle-raunak-v6-gate-*` | 0.949 / 0.948 / 0.948 | No uplift vs champion |
 
 ### Current in-flight
 
 - `aleixlopez/birdclef-2026-two-model-blend-v1` is now in **fail-fast safety mode** (no further submissions from this cached-source blend path).
-- Three new packaged candidates are ready to push/submit:
+- Gate-parameter sweep submissions are **complete** and did not improve the champion (batch scores: 0.949, 0.948, 0.948):
+  - `aleixlopez/birdclef-2026-raunak-v6-gate-fb060-r2` (`fake_blend=0.06`, `temporal_radius=2`)
+  - `aleixlopez/birdclef-2026-raunak-v6-gate-fb080-r4` (`fake_blend=0.08`, `temporal_radius=4`)
+  - `aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r3` (`fake_blend=0.10`, `temporal_radius=3`)
+- Three-stream candidates remain packaged (not yet submitted in this cycle):
   - `aleixlopez/birdclef-2026-three-stream-blend-v1`
   - `aleixlopez/birdclef-2026-three-stream-soundscape-boost-v1`
   - `aleixlopez/birdclef-2026-three-stream-non-bird-specialized-v1`

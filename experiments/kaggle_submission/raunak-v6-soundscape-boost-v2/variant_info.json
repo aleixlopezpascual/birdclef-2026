@@ -1,0 +1,9 @@
+{
+  "variant": "v2",
+  "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-soundscape-boost-v2",
+  "path": "experiments/kaggle_submission/raunak-v6-soundscape-boost-v2",
+  "multiplier": 1.08,
+  "threshold": 0.28,
+  "species_count": 28,
+  "title": "Soundscape-Only Boost"
+}

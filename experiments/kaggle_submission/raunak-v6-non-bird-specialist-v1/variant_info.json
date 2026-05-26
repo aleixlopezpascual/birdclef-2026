@@ -1,0 +1,8 @@
+{
+  "variant": "v1",
+  "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-non-bird-v1",
+  "path": "experiments/kaggle_submission/raunak-v6-non-bird-specialist-v1",
+  "non_bird_temp": 1.15,
+  "bird_temp": 0.95,
+  "title": "Non-Bird Specialist"
+}
