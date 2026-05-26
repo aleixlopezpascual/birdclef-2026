@@ -1,0 +1,65 @@
+[
+  {
+    "variant": "fb060-r2",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb060-r2",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb060-r2",
+    "fake_blend": 0.06,
+    "temporal_radius": 2
+  },
+  {
+    "variant": "fb060-r3",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb060-r3",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb060-r3",
+    "fake_blend": 0.06,
+    "temporal_radius": 3
+  },
+  {
+    "variant": "fb060-r4",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb060-r4",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb060-r4",
+    "fake_blend": 0.06,
+    "temporal_radius": 4
+  },
+  {
+    "variant": "fb080-r2",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb080-r2",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb080-r2",
+    "fake_blend": 0.08,
+    "temporal_radius": 2
+  },
+  {
+    "variant": "fb080-r3",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb080-r3",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb080-r3",
+    "fake_blend": 0.08,
+    "temporal_radius": 3
+  },
+  {
+    "variant": "fb080-r4",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb080-r4",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb080-r4",
+    "fake_blend": 0.08,
+    "temporal_radius": 4
+  },
+  {
+    "variant": "fb100-r2",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r2",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb100-r2",
+    "fake_blend": 0.1,
+    "temporal_radius": 2
+  },
+  {
+    "variant": "fb100-r3",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r3",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb100-r3",
+    "fake_blend": 0.1,
+    "temporal_radius": 3
+  },
+  {
+    "variant": "fb100-r4",
+    "kaggle_id": "aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r4",
+    "path": "experiments/kaggle_submission/raunak-v6-gate-sweep-v1/fb100-r4",
+    "fake_blend": 0.1,
+    "temporal_radius": 4
+  }
+]
