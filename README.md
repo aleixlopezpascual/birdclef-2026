@@ -219,6 +219,9 @@ Outputs:
 
 - Best submission so far: `kaggle-ported-raunak-v6-v1` with **0.949** public score.
 - Meenal hedge run (`kaggle-ported-meenal-improved-v1`) scored **0.949** (tie with champion).
+- New self-contained blends both completed and scored **0.949** (tie, no gain):
+  - `kaggle-blend-m7-m3-v1` (M7 0.965 + M3 0.035)
+  - `kaggle-blend-m7-m4-v1` (M7 0.70 + M4 0.30)
 - Raunak calibration sweep (`calib-a/b/c`) all scored **0.948** (regression vs champion).
 - Two-model blend v2 scored **0.500** (blend bug due row alignment mismatch; fail-fast fix now applied).
 
@@ -257,11 +260,13 @@ Outputs:
 | Two-model blend rerun | `kaggle-two-model-blend-v6` | failed | switched template source; still not robust enough |
 | Two-model blend rerun | `kaggle-two-model-blend-v7` | scoring_error | cached-source blending still invalid for hidden scoring; path now hardened to fail-fast |
 | Two-model blend rerun | `kaggle-two-model-blend-v8` | failed (expected) | hard fail-fast guard blocked unsafe small-template run |
+| Self-contained blend (M7+M3) | `kaggle-blend-m7-m3-v1` | 0.949 | Stable run, ties champion (no uplift) |
+| Self-contained blend (M7+M4) | `kaggle-blend-m7-m4-v1` | 0.949 | Stable run, ties champion (no uplift) |
 
 ### Current in-flight
 
 - `aleixlopez/birdclef-2026-two-model-blend-v1` is now in **fail-fast safety mode** (no further submissions from this cached-source blend path).
-- Three new packaged candidates are ready to push/submit:
+- Three-stream candidates remain packaged (not yet submitted in this cycle):
   - `aleixlopez/birdclef-2026-three-stream-blend-v1`
   - `aleixlopez/birdclef-2026-three-stream-soundscape-boost-v1`
   - `aleixlopez/birdclef-2026-three-stream-non-bird-specialized-v1`
