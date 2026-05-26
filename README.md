@@ -267,6 +267,7 @@ Outputs:
 
 - `aleixlopez/birdclef-2026-two-model-blend-v1` is now in **fail-fast safety mode** (no further submissions from this cached-source blend path).
 - Gate-parameter sweep (Raunak V6 champion path) is running with 3 submitted variants:
+- Gate-parameter sweep submissions did **not** improve the champion (batch outcome so far: 0.949, 0.948, 1 pending score):
   - `aleixlopez/birdclef-2026-raunak-v6-gate-fb060-r2` (`fake_blend=0.06`, `temporal_radius=2`)
   - `aleixlopez/birdclef-2026-raunak-v6-gate-fb080-r4` (`fake_blend=0.08`, `temporal_radius=4`)
   - `aleixlopez/birdclef-2026-raunak-v6-gate-fb100-r3` (`fake_blend=0.10`, `temporal_radius=3`)
