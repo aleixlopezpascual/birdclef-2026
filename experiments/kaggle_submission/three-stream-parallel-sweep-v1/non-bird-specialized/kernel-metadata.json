@@ -1,5 +1,5 @@
 {
-  "id": "aleixlopez/birdclef-2026-three-stream-parallel-non-bird-specialized-v1",
+  "id": "aleixlopez/bc26-three-stream-parallel-non-bird-v1",
   "title": "BirdCLEF 2026 Three Stream Parallel Non Bird Specialized V1",
   "code_file": "three_stream_parallel_non_bird_specialized_v1.ipynb",
   "language": "python",
@@ -13,6 +13,6 @@
   "kernel_sources": [
     "aleixlopez/birdclef-2026-ported-raunak-v6-v1",
     "aleixlopez/birdclef-2026-meenal-v1",
-    "aleixlopez/birdclef-2026-ported-eos6-v1"
+    "aleixlopez/birdclef-2026-eos-9-prior-calib-v1"
   ]
 }
