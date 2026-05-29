@@ -1,0 +1,12 @@
+# gmlp notebook connect config for BirdCLEF 2026 Vertex AI instance
+# Usage: gmlp notebook connect --config scripts/notebook-connect.yaml
+#        Then connect VS Code / Jupyter to http://localhost:8080
+
+name: instance-20260529-111712
+location: us-east1-b
+project_id: global-mlp-stg-2182
+
+labels:
+  dh_platform: consumer
+  dh_tribe: con-global-ranking
+  dh_squad: con-core-ml
