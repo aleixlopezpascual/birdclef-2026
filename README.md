@@ -264,6 +264,7 @@ Outputs:
 | Self-contained blend (M7+M3) | `kaggle-blend-m7-m3-v1` | 0.949 | Stable run, ties champion (no uplift) |
 | Self-contained blend (M7+M4) | `kaggle-blend-m7-m4-v1` | 0.949 | Stable run, ties champion (no uplift) |
 | Gate sweep (FB060-R2 / FB080-R4 / FB100-R3) | `kaggle-raunak-v6-gate-*` | 0.949 / 0.948 / 0.948 | No uplift vs champion |
+| EoS-9: class-aware `fit_prior_tables` calib | `kaggle-eos9-prior-calib-v1` | pending | Packaged — awaiting Kaggle push & submit |
 
 ### Current in-flight
 
@@ -279,6 +280,11 @@ Outputs:
 - Parallel sweep family is also packaged (`three-stream-parallel-sweep-v1`) with 5 variants:
   - baseline, soundscape-boost, non-bird-specialized, combo-boost, eos-heavy-combo
 - After completion/push, submit manually to competition to get public LB score.
+- **EoS-9** (`eos9-prior-calib-v1`) is **packaged** — new class-aware `fit_prior_tables` post-processing:
+  - Birds (Aves/Mammalia) effective prior λ → ~0.65 (delta +0.15)
+  - Texture (Amphibia/Insecta) effective prior λ → ~0.30 (delta −0.20)
+  - Script: `scripts/create_eos9_notebook.py`
+  - Next step: push to Kaggle and submit to competition for LB score
 
 See detailed logs in:
 
