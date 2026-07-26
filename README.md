@@ -17,6 +17,16 @@ BirdCLEF+ 2026 focuses on **acoustic species identification** from continuous fi
 
 For full rules, timelines, code constraints, prizes, and a full dataset/file breakdown, see the detailed document linked above.
 
+## About notebooks and experiment artifacts
+
+This repo includes **scripts to generate and manage notebooks** rather than storing them directly. The `experiments/` directory contains configs, metadata indices, and orchestration code, but `.ipynb` files are `.gitignore`d because:
+
+1. **Third-party Kaggle notebooks** (from other competitors) are copyright-protected and redistributable only under their authors' licenses.
+2. **Derivative notebooks** built on public kernels carry those copyright restrictions.
+3. **Kaggle competition data** (taxonomy, sample submissions) fall under CC BY-NC-SA 4.0 — redistribution outside Kaggle's platform is restricted.
+
+To download and regenerate notebooks locally, run the scripts described below. They'll populate `experiments/kaggle_submission/` and `experiments/baselines/` with the working `.ipynb` files.
+
 ## Notebook deep-dive collection
 
 To collect top public Kaggle notebooks for this competition (top score + top votes), run:
